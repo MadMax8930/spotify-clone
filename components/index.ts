@@ -6,6 +6,7 @@ import Header from './Header';
 import Button from './Button';
 import Box from './Box';
 import Modal from './Modal';
+import AuthModal from './AuthModal';
 
 export {
    SidebarItem,
@@ -16,4 +17,5 @@ export {
    Button,
    Box,
    Modal,
+   AuthModal,
 }
