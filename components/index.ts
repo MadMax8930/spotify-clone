@@ -5,6 +5,7 @@ import Library from './Library';
 import Header from './Header';
 import Button from './Button';
 import Box from './Box';
+import Modal from './Modal';
 
 export {
    SidebarItem,
@@ -14,4 +15,5 @@ export {
    Header,
    Button,
    Box,
+   Modal,
 }
