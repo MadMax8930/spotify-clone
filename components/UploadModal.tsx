@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Modal, Input, Button } from '@/components'
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form'
 import { useUser } from '@/hooks/useUser'

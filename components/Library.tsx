@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react'
 import { TbPlaylist } from 'react-icons/tb'
 import { AiOutlinePlus } from 'react-icons/ai'
 import { useUser } from '@/hooks/useUser'
@@ -14,7 +13,7 @@ const Library = () => {
 
    const onClick = () => {
       if (!user) { return authModal.onOpen() };
-      
+
       //Todo: Check for subscription
 
       return uploadModal.onOpen();
