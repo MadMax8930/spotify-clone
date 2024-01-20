@@ -5,6 +5,7 @@ import ToasterProvider from '@/providers/ToasterProvider'
 import SupabaseProvider from '@/providers/SupabaseProvider'
 import UserProvider from '@/providers/UserProvider'
 import ModalProvider from '@/providers/ModalProvider'
+import getSongsByUserId from '@/actions/getSongsByUserId'
 import './globals.css'
 
 const font = Figtree({ subsets: ['latin'] })
@@ -12,17 +13,20 @@ const font = Figtree({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Spotify Clone',
   description: 'Music application where you can listen the best hits and upload your own!',
-}
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
+export const revalidate = 0; // not cached
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+   const userSongs = await getSongsByUserId()
+   return (
     <html lang="en">
       <body className={font.className}>
          <ToasterProvider />
          <SupabaseProvider>
             <UserProvider>
                <ModalProvider />
-               <Sidebar>
+               <Sidebar songs={userSongs}>
                   {children}
                </Sidebar>
             </UserProvider>

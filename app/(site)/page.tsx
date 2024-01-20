@@ -1,7 +1,7 @@
 import { Header, ListItem, PageContent } from '@/components'
 import getSongs from '@/actions/getSongs'
 
-export const revalidate = 0; // page not cached
+export const revalidate = 0; // not cached
 
 export default async function Home() {
   const songs = await getSongs();
