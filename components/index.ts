@@ -13,6 +13,7 @@ import PageContent from './PageContent';
 import SongItem from './SongItem';
 import PlayButton from './PlayButton';
 import MediaItem from './MediaItem';
+import SearchContent from './SearchContent';
 import SearchInput from './SearchInput';
 
 export {
@@ -31,5 +32,6 @@ export {
    SongItem,
    PlayButton,
    MediaItem,
+   SearchContent,
    SearchInput,
 }
