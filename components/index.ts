@@ -11,6 +11,7 @@ import AuthModal from './AuthModal';
 import UploadModal from './UploadModal';
 import PageContent from './PageContent';
 import SongItem from './SongItem';
+import PlayButton from './PlayButton';
 
 export {
    SidebarItem,
@@ -26,4 +27,5 @@ export {
    UploadModal,
    PageContent,
    SongItem,
+   PlayButton,
 }
