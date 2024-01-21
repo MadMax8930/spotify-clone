@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
-import { Sidebar } from '@/components'
+import { Sidebar, Player } from '@/components'
 import ToasterProvider from '@/providers/ToasterProvider'
 import SupabaseProvider from '@/providers/SupabaseProvider'
 import UserProvider from '@/providers/UserProvider'
@@ -29,6 +29,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                <Sidebar songs={userSongs}>
                   {children}
                </Sidebar>
+               <Player />
             </UserProvider>
          </SupabaseProvider>
       </body>
