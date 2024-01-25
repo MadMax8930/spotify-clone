@@ -18,6 +18,7 @@ import SearchInput from './SearchInput';
 import LikeButton from './LikeButton';
 import LikedContent from './LikedContent';
 import Player from './Player';
+import PlayerContent from './PlayerContent';
 
 export {
    SidebarItem,
@@ -40,4 +41,5 @@ export {
    LikeButton,
    LikedContent,
    Player,
+   PlayerContent,
 }
