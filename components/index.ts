@@ -19,6 +19,7 @@ import LikeButton from './LikeButton';
 import LikedContent from './LikedContent';
 import Player from './Player';
 import PlayerContent from './PlayerContent';
+import Slider from './Slider';
 
 export {
    SidebarItem,
@@ -42,4 +43,5 @@ export {
    LikedContent,
    Player,
    PlayerContent,
+   Slider,
 }
