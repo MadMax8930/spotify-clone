@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const revalidate = 0; // not cached
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-   const userSongs = await getSongsByUserId()
+   const userSongs = await getSongsByUserId();
    return (
     <html lang="en">
       <body className={font.className}>
