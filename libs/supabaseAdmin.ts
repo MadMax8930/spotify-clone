@@ -103,7 +103,7 @@ const manageSubscriptionStatusChange = async (
    createAction = false,
 ) => {
    const { data: customerData, error: noCustomerError } =
-   await supabaseAdmin.from('customers').select('id').eq('stipe_customer_id', customerId).single();
+   await supabaseAdmin.from('customers').select('id').eq('stripe_customer_id', customerId).single();
 
    if (noCustomerError) { throw noCustomerError; }
 
