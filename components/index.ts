@@ -9,6 +9,7 @@ import Input from './Input';
 import Modal from './Modal';
 import AuthModal from './AuthModal';
 import UploadModal from './UploadModal';
+import SubscribeModal from './SubscribeModal';
 import PageContent from './PageContent';
 import SongItem from './SongItem';
 import PlayButton from './PlayButton';
@@ -33,6 +34,7 @@ export {
    Modal,
    AuthModal,
    UploadModal,
+   SubscribeModal,
    PageContent,
    SongItem,
    PlayButton,
