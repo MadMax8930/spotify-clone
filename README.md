@@ -13,4 +13,4 @@ npm i react-icons tailwind-merge supabase@">=1.8.1" --save-dev @supabase/auth-he
 ```
 
 ### App deployed on Vercel:
-[Try it by yourself](https://spotifyyy.vercel.app/)
+[Try it by yourself](https://spotifick.vercel.app/)
