@@ -1,3 +1,4 @@
+import AccountContent from './AccountContent';
 import SidebarItem from './SidebarItem';
 import Sidebar from './Sidebar';
 import ListItem from './ListItem';
@@ -23,6 +24,7 @@ import PlayerContent from './PlayerContent';
 import Slider from './Slider';
 
 export {
+   AccountContent,
    SidebarItem,
    Sidebar,
    ListItem,
